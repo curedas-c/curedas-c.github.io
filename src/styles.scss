@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import './theme/base/variables.scss';
+@import './theme/base/normalize.css';
+@import './theme/base/font.scss';
+@import './theme/base/base.scss';
+
+// modules
+@import './theme/modules/button.scss';
+@import './theme/modules/shared.scss';

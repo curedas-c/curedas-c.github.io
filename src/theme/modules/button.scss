@@ -1,0 +1,32 @@
+button {
+    display: block;
+    text-transform: uppercase;
+    padding: .6rem 1rem;
+    border: 1px solid $button_color;
+    border-radius: 4px;
+    box-shadow: 0 .8rem .8rem rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    &:hover {
+        transition: background-color .5s ease-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.button--primary {
+        background-color: $button_color;
+        color: $white;
+        &:hover {
+            background-color: darken($color: $button_color, $amount: 5);
+        }
+    }
+    &.button--secondary {
+        background-color: $button_color_alternate;
+        color: $button_color;
+        &:hover {
+            filter: brightness(80%);
+        }
+    }
+}
