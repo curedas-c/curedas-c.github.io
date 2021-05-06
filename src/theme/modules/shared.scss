@@ -1,27 +1,61 @@
 .red-color {
-    color: $invalid_color;
+  color: $invalid_color;
 }
 
 .padding-low {
-    padding: .4rem;
+  padding: .4rem;
 }
 
 .flex-evenly {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .bottom-gradient {
-    &:after {
-        content: '';
-        display: none;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient($bottom_gradient_start 0%, $bottom_gradient_end 100%);
-        border-radius: 1rem;
-    }
+  &:after {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient($bottom_gradient_start 0%, $bottom_gradient_end 100%);
+    border-radius: 1rem;
+  }
+}
+
+
+.text-underline {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: '';
+    width: 3rem;
+    height: .3rem;
+    background-color: $text-color;
+    position: absolute;
+    bottom: -.6rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #3366ff86 0%, #0040ff85 100%);
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

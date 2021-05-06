@@ -1,0 +1,92 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+form {
+  position: relative;
+  padding: 1.2rem 0 2rem 0;
+  width: 600px;
+  max-width: 80%;
+
+  input,
+  textarea {
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+    display: block;
+    border: none;
+    border-bottom: 2px solid $input_color;
+    border-bottom-width: 0%;
+    padding: 1rem .6rem;
+    margin-bottom: 1rem;
+    background-color: $input_color;
+    color: $button_color;
+    transition: border 1s ease-out;
+
+    @media (max-width: 1024px) and (orientation: landscape) {
+      padding: .6rem .3rem;
+    }
+
+    &::placeholder {
+      color: $placeholder_color;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $button_color;
+      border-bottom-width: 100%;
+    }
+  }
+
+  textarea {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
+    right: .4rem;
+  }
+}
+
+.ng-invalid.ng-touched:not(form) {
+  border-bottom: 2px solid $invalid_color !important;
+}
+
+.ng-valid.ng-touched:not(form) {
+  border-bottom: 2px solid $valid_color !important;
+}
+
+.popup {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  .popup-success,
+  .popup-error {
+    z-index: 100;
+    border-radius: 2rem;
+    padding: .6rem;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: $white;
+    animation: puff-in-center 1s ease-out;
+  }
+
+  .popup-success {
+    background-color: $valid_color;
+  }
+
+  .popup-error {
+    background-color: $invalid_color;
+  }
+}

@@ -29,4 +29,10 @@ button {
             filter: brightness(80%);
         }
     }
+
+    .button-icon {
+        width: 1rem;
+        vertical-align: middle;
+        color: $button_color_alternate;
+    }
 }
