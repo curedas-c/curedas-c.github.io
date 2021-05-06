@@ -1,0 +1,28 @@
+.anim-card {
+    width: 18rem;
+    max-width: 25rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-top: 42.85%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+    color: white;
+    transition: all 1s ease-out;
+
+    &:hover {
+        transform: scale(1.1);
+        &::after {
+            display: block;
+        }
+        .anim-card-text {
+            visibility: visible;
+        }
+    }
+    .anim-card-text {
+        padding-bottom: 3%;
+        visibility: hidden;
+    }
+}
