@@ -114,7 +114,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       .then(
         () => {
           this.showPopup(true);
-          this.initForm();
+          this.contactForm.reset();
         },
         (err) => {
           this.showPopup();
@@ -129,6 +129,6 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.isFormSended = formSended;
     setTimeout(() => {
       this.isPopupVisible = false;
-    }, 4000);
+    }, 5000);
   }
 }

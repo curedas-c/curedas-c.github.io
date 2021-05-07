@@ -50,7 +50,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #3366ff86 0%, #0040ff85 100%);
+  background: linear-gradient(135deg, $bottom_gradient_start 0%, $bottom_gradient_end 100%);
 
   img {
     position: absolute;

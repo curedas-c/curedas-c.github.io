@@ -86,6 +86,6 @@
 <app-popup *ngIf="isPopupVisible" [success]="isFormSended"></app-popup>
 
 <!-- Loading -->
-<section *ngIf="isFormLoading" class="loader">
+<section [hidden]="!isFormLoading" class="loader">
   <img width="150px" src="assets/icons/tail-spin.svg">
 </section>
