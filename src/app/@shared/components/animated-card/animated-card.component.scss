@@ -9,20 +9,33 @@
     background-size: cover;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
-    color: white;
+    color: #F7F9FC;
     transition: all 1s ease-out;
 
     &:hover {
         transform: scale(1.1);
-        &::after {
-            display: block;
+
+        .anim-card-blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: inherit;
+            border-radius: inherit;
+            filter: blur(4px);
         }
+        
         .anim-card-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
             visibility: visible;
         }
     }
     .anim-card-text {
-        padding-bottom: 3%;
         visibility: hidden;
     }
 }
