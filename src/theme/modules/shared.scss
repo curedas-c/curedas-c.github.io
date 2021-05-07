@@ -59,3 +59,14 @@
     transform: translate(-50%, -50%);
   }
 }
+
+.content {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 80%;
+
+  p {
+    line-height: 140%;
+    margin: 1.8rem 0;
+  }
+}

@@ -23,8 +23,8 @@
   }
 }
 
-.title {
-  margin: 0 0 1.5rem 0;
+.title:not(:nth-of-type(1)) {
+  margin: 3.5rem 0;
 }
 
 .copyright {
