@@ -8,6 +8,7 @@ import {
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Typewriter from 'typewriter-effect/dist/core';
 import emailjs, { init } from 'emailjs-com';
+import { PROJECT_LIST_IMAGE } from './@shared/constants/project-list';
 
 @Component({
   selector: 'app-root',
@@ -17,21 +18,7 @@ import emailjs, { init } from 'emailjs-com';
 export class AppComponent implements OnInit, AfterViewInit {
   writingText: any;
   typeWriter: any;
-  abidjanaisIMG = [
-    'assets/images/abidjanais_first.jpg',
-    'assets/images/abidjanais_second.jpg',
-    'assets/images/abidjanais_third.jpg',
-  ];
-  optimizarIMG = [
-    'assets/images/optimizar_first.jpg',
-    'assets/images/optimizar_second.jpg',
-    'assets/images/optimizar_third.jpg',
-  ];
-  transportIMG = [
-    'assets/images/transport_first.jpg',
-    'assets/images/transport_second.jpg',
-    'assets/images/transport_third.jpg',
-  ];
+  projects: any = PROJECT_LIST_IMAGE;
   contactForm: FormGroup;
   isFormLoading = false;
   // popup

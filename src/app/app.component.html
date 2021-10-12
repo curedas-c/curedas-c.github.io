@@ -29,10 +29,23 @@
   <h2 class="text-underline">Réalisations.</h2>
   <p>Quelques projet que j'ai eu le plaisir de concevoir.</p>
 </div>
-<section class="flex-evenly">
-  <app-animated-card [images]="abidjanaisIMG" title="Abidjanais"></app-animated-card>
-  <app-animated-card [images]="transportIMG" title="Oxygen Transport"></app-animated-card>
-  <app-animated-card [images]="optimizarIMG" title="Ivory Optimizar"></app-animated-card>
+
+<section class="gallery">
+  <div class="gallery__item gallery__item--1">
+    <app-animated-card [images]="projects?.OPTIMIZAR" title="Ivory Optimizar 👁"></app-animated-card>
+  </div>
+  <div class="gallery__item gallery__item--2">
+    <app-animated-card [images]="projects?.TRANSPORT" title="Oxygen Transport 👁"></app-animated-card>
+  </div>
+  <div class="gallery__item gallery__item--3">
+    <app-animated-card [images]="projects?.ACTU" title="Acturoutes 👁" [textPrimary]="true"></app-animated-card>
+  </div>
+  <div class="gallery__item gallery__item--4">
+    <app-animated-card [images]="projects?.ABIDJANAIS" title="Abidjanais 👁"></app-animated-card>
+  </div>
+  <div class="gallery__item gallery__item--5">
+    <app-animated-card [images]="projects?.EASYFORM" title="Easy Forms 👁" [textPrimary]="true"></app-animated-card>
+  </div>
 </section>
 
 <!--Services Section -->

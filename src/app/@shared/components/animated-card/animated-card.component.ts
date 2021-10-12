@@ -9,6 +9,7 @@ export class AnimatedCardComponent implements OnInit, AfterViewInit {
 
   @Input() images: string[] = [];
   @Input() title: string = '';
+  @Input() textPrimary = false;
   @ViewChild('card') card: ElementRef<HTMLDivElement>;
   currentIndex = 0;
   constructor(private renderer: Renderer2) { }
