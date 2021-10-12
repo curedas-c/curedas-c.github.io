@@ -1678,6 +1678,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+angular-gallery@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/angular-gallery/-/angular-gallery-1.0.2.tgz#0999ec1d1a69699babab95eae299e9ff6e5814e1"
+  integrity sha512-MyR3fqM6bbk8Rhcx1kHl7wzEJuZJdNydduDTXpBOoO6+OTx+aL9luQb/mnKkQziYguqgWkey2BvqhLy2zCt8+w==
+
 ansi-colors@4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"

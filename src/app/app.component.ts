@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Typewriter from 'typewriter-effect/dist/core';
 import emailjs, { init } from 'emailjs-com';
 import { PROJECT_LIST_IMAGE } from './@shared/constants/project-list';
+import { Gallery } from 'angular-gallery';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   isFormSended = false;
   @ViewChild('form') formRef: ElementRef<HTMLFormElement>;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private gallery: Gallery) {}
 
   ngOnInit(): void {
     this.writingText = document.querySelector('.main-text h2 span');
@@ -44,6 +45,15 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.disableLoadingScreen();
     this.initTypeWriter();
   }
+
+  showGallery(project: string) {
+    let images = this.projects[project]?.map(item => {
+      return { path: item };
+    });
+    if (images) {
+      this.gallery.load({images, index: 0, counter: true});
+    }
+}
 
   initTypeWriter() {
     this.typeWriter

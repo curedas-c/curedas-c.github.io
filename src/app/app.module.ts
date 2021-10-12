@@ -7,6 +7,7 @@ import { NgParticlesModule } from 'ng-particles';
 import { AnimatedCardComponent } from './@shared/components/animated-card/animated-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PopupComponent } from './@shared/components/popup/popup.component';
+import { IvyGalleryModule } from 'angular-gallery';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PopupComponent } from './@shared/components/popup/popup.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgParticlesModule
+    NgParticlesModule,
+    IvyGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

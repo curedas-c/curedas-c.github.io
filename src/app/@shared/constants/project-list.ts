@@ -6,13 +6,13 @@ export const PROJECT_LIST_IMAGE = {
   ],
   TRANSPORT: [
     'assets/images/transport_1.jpg',
-    'assets/images/transport_second.jpg',
+    'assets/images/transport_2.jpg',
     'assets/images/transport_3.jpg',
   ],
   ACTU: ['assets/images/acturoutes_1.jpg', 'assets/images/acturoutes_2.jpg'],
   ABIDJANAIS: [
     'assets/images/abidjanais_1.jpg',
-    'assets/images/abidjanais_second.jpg',
+    'assets/images/abidjanais_2.jpg',
     'assets/images/abidjanais_3.jpg',
   ],
   EASYFORM: [

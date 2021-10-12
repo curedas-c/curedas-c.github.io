@@ -32,19 +32,19 @@
 
 <section class="gallery">
   <div class="gallery__item gallery__item--1">
-    <app-animated-card [images]="projects?.OPTIMIZAR" title="Ivory Optimizar 👁"></app-animated-card>
+    <app-animated-card [images]="projects?.OPTIMIZAR" title="Ivory Optimizar 👁" (click)="showGallery('OPTIMIZAR')"></app-animated-card>
   </div>
   <div class="gallery__item gallery__item--2">
-    <app-animated-card [images]="projects?.TRANSPORT" title="Oxygen Transport 👁"></app-animated-card>
+    <app-animated-card [images]="projects?.TRANSPORT" title="Oxygen Transport 👁" (click)="showGallery('TRANSPORT')"></app-animated-card>
   </div>
   <div class="gallery__item gallery__item--3">
-    <app-animated-card [images]="projects?.ACTU" title="Acturoutes 👁" [textPrimary]="true"></app-animated-card>
+    <app-animated-card [images]="projects?.ACTU" title="Acturoutes 👁" [textPrimary]="true" (click)="showGallery('ACTU')"></app-animated-card>
   </div>
   <div class="gallery__item gallery__item--4">
-    <app-animated-card [images]="projects?.ABIDJANAIS" title="Abidjanais 👁"></app-animated-card>
+    <app-animated-card [images]="projects?.ABIDJANAIS" title="Abidjanais 👁" (click)="showGallery('ABIDJANAIS')"></app-animated-card>
   </div>
   <div class="gallery__item gallery__item--5">
-    <app-animated-card [images]="projects?.EASYFORM" title="Easy Forms 👁" [textPrimary]="true"></app-animated-card>
+    <app-animated-card [images]="projects?.EASYFORM" title="Easy Forms 👁" [textPrimary]="true" (click)="showGallery('EASYFORM')"></app-animated-card>
   </div>
 </section>
 
