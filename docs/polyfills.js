@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Curedas-PC\Documents\PHP\Bara\portfolio\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\Curedas-PC\Documents\PHP\Work\curedas-c.github.io\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
